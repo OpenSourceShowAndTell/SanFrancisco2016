@@ -1,4 +1,4 @@
-###[Submit a topic for a speaking spot as a GitHub issue](https://github.com/OpenSourceShowAndTell/SanFrancisco_April2016/issues/new)
+###[Submit a topic for a speaking spot as a GitHub issue](https://github.com/OpenSourceShowAndTell/SanFrancisco2016/issues/new)
 
 ###Code of Conduct (Please feel free to make suggestions or edits to our code of conduct via pull requests)
 
