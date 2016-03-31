@@ -1,4 +1,11 @@
+#Open Source Show and Tell
+##Friday April 22th, 2016 in San Francisco, CA from 2pm - 6pm
+
 ###[Submit a topic for a speaking spot as a GitHub issue](https://github.com/OpenSourceShowAndTell/SanFrancisco2016/issues/new)
+
+##Past Events!
+[2015](https://keen.io/blog/117654772796/thanks-for-sharing#presenters)
+[2014](http://www.eventbrite.com/e/open-source-show-and-tell-tickets-9983656385)
 
 ###Code of Conduct (Please feel free to make suggestions or edits to our code of conduct via pull requests)
 
