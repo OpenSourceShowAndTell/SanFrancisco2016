@@ -12,10 +12,10 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
+figure, figcaption, footer, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  margin: 0;
+  /*margin: 0;*/
   padding: 0;
   border: 0;
   font-size: 100%;
@@ -24,12 +24,20 @@ time, mark, audio, video {
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+footer, hgroup, menu, nav, section {
   display: block;
 }
 body {
   line-height: 1;
 }
+.customheader {
+  background: url(https://s3-us-west-2.amazonaws.com/elof/opensourceshowtell/Open-Source-Show-%26-Tell.png) 50% 50% no-repeat;
+  height: 222px;
+  text-align: center;
+  min-width: 675px;
+  max-width: 100%;
+}
+
 ol, ul {
   list-style: none;
 }
@@ -75,33 +83,80 @@ h1.title {
   text-align: center;
 }
 
-code {
-  font-size: 11px;
-}
-
-.customheader {
-  background: url(http://s3-us-west-2.amazonaws.com/elof/opensourceshowtell/Open-Source-Show-%26-Tell.png) 50% 50% no-repeat;
-  height: 222px;
+a.btn {
+  max-width: 220px;
+  border: 2px solid white;
+  color: white;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 2px;
+  display: block;
+  margin: 20px auto;
   text-align: center;
-  min-width: 675px;
-  max-width: 100%;
-}
+  color: white;
+  background: rgb(39, 170, 225); }
+  a.btn:hover {
+  transform: scale(1.05, 1.05);
+  }
+
 
 .wrapper {
   width: 675px;
   margin: 0 auto;
 }
 
-#container {
-  border: 1px solid #2a2a2a;
-  background: #ddd url(../images/pattern.png);
-  box-shadow: 0 0 5px #b1b1b1;
+@media only screen and (max-width: 100%) {
+  .wrapper { width: 100%; }
 }
 
-p.tagline {
+#container {
+  background: #ddd url(../images/pattern.png);
+}
+
+.tagline {
   padding: 20px 20px 0;
   color: rgb(41, 52, 62);
   font-size: 17px;
+}
+
+.tagline ul {
+  text-align: center;
+}
+
+.tagline ul li {
+  display: inline;
+}
+
+.tagline ul li img {
+  height: 100px;
+  padding: 0px 10px;
+}
+
+.speaker ul li img {
+  height: 200px;
+}
+
+.speaker ul li {
+  list-style: none;
+  /*margin: 0;*/
+  padding: 0;
+  display: block;
+}
+
+.speaker ul {
+  float: left;
+  max-width: 220px;
+}
+
+.speaker {
+  text-align: center;
+  padding: 0 50px;
+}
+
+.submit {
+  clear: both;
 }
 
 #main {
@@ -120,52 +175,6 @@ p.tagline {
 
 .download-bar .inner {
   overflow: hidden;
-}
-
-.download-bar .watch-fork iframe {
-  display: block;
-  float: left;
-  border-right: 1px solid #ddd;
-  padding-right: 5px;
-}
-.download-bar .watch-fork iframe.last {
-  border-right: 0 none;
-  padding-right: 0;
-  padding-left: 5px;
-  border-left: 1px solid #fff;
-}
-.download-bar .watch-fork {
-  overflow: hidden;
-  float: right;
-  background-color: #eee;
-  padding: 5px;
-  border-radius: 3px;
-}
-
-.download-bar .blc {
-  border: 10px solid black;
-  border-color: transparent transparent black;
-  width: 0;
-  height: 0;
-  display: block;
-  position: absolute;
-  bottom: -15px;
-  left: 0;
-  -moz-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-}
-
-.download-bar .trc {
-  border: 10px solid black;
-  border-color:  black transparent transparent;
-  width: 0;
-  height: 0;
-  display: block;
-  position: absolute;
-  top: -15px;
-  right: 0;
-  -moz-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
 }
 
 .download-bar .avatar {
@@ -233,83 +242,6 @@ p.tagline {
   filter:alpha(opacity=1);
 }
 
-.current-section a.zip {
-  margin-right: 8px;
-}
-
-a.zip,
-a.zip span {
-  background: transparent url(../images/zip.png) no-repeat 0 0;
-  width: 30px;
-  height: 21px;
-  opacity: 0.8;
-  display: inline-block;
-  text-indent: -10000px;
-  -moz-opacity: 0.8;
-  filter:alpha(opacity=8);
-  -webkit-transition: opacity ease-in-out 0.3s;
-}
-
-a.tar,
-a.tar span {
-  background: transparent url(../images/tar.png) no-repeat 0 0;
-  width: 30px;
-  height: 21px;
-  opacity: 0.8;
-  display: inline-block;
-  text-indent: -10000px;
-  -moz-opacity: 0.8;
-  filter:alpha(opacity=8);
-  -webkit-transition: opacity ease-in-out 0.3s;
-}
-
-a.code {
-  background: transparent url(../images/code.png) no-repeat 0 2px;
-  width: 30px;
-  height: 21px;
-  display: block;
-  opacity: 0.8;
-  display: inline-block;
-  text-indent: -10000px;
-  -moz-opacity: 0.8;
-  filter:alpha(opacity=8);
-  -webkit-transition: opacity ease-in-out 0.3s;
-}
-
-a.zip:hover,
-a.tar:hover,
-a.code:hover {
-  opacity: 1;
-  -moz-opacity: 1;
-  filter:alpha(opacity=1);
-}
-
-a.download-button {
-  border: 1px solid black;
-  border-radius: 3px;
-  display: inline-block;
-  text-indent: 0!important;
-  width: auto;
-  float: right;
-  background: #999; /* for non-css3 browsers */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#37ADD4', endColorstr='#1B657E'); /* for IE */
-  background: -webkit-gradient(linear, left top, left bottom, from(#37ADD4), to(#1B657E)); /* for webkit browsers */
-  background: -moz-linear-gradient(top,  #37ADD4,  #1B657E); /* for firefox 3.6+ */
-  height: auto;
-  margin-left: 10px;
-}
-
-a.download-button span {
-  background-position: 10px 5px;
-  width: auto;
-  height: auto;
-  padding: 5px 10px;
-  padding-left: 45px;
-  display: inline-block;
-  text-indent: 0!important;
-  color: #fff;
-}
-
 footer {
   margin-bottom: 60px;
   padding-bottom: 60px;
@@ -321,6 +253,15 @@ footer .owner {
   padding: 5px 15px;
   margin: -67px -10px 35px;
   color: #d6d6d6;
+}
+
+footer .owner p {
+  font-family:Georgia, serif;
+}
+
+footer .owner p a {
+  font-size: 16px;
+  font-style: italic;
 }
 
 footer .creds small {
@@ -344,13 +285,25 @@ footer .owner img {
   margin: 5px;
 }
 
-footer .owner p {
-  font-family:Georgia, serif;
+a.code {
+  background: transparent url(../images/code.png) no-repeat 0 2px;
+  width: 30px;
+  height: 21px;
+  padding-left: 35px;
+  text: bold;
+  display: block;
+  opacity: 0.8;
+  display: inline;
+  /*text-indent: -10000px;*/
+  -moz-opacity: 0.8;
+  filter:alpha(opacity=8);
+  -webkit-transition: opacity ease-in-out 0.3s;
 }
 
-footer .owner p a {
-  font-size: 16px;
-  font-style: italic;
+a.code:hover {
+  opacity: 1;
+  -moz-opacity: 1;
+  filter:alpha(opacity=1);
 }
 
 /* Markdown */
@@ -474,7 +427,7 @@ footer .owner p a {
 }
 
 .markdown-body table td * {
-  margin: 0;
+  /*margin: 0;*/
 }
 
 .markdown-body td {

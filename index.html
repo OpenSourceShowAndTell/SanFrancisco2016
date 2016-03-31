@@ -5,119 +5,145 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen"/>
-  <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen">
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+  <link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script type="text/javascript" src="javascripts/script.js"></script>
+  <script src="https://d26b395fwzu5fz.cloudfront.net/3.2.4/keen.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="javascripts/common-web.js"></script>
 
-  <title>Open Source Show &amp; Tell</title>
-  <meta name="description" content="Info about Open Source Show &amp; Tell events">
 
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script type="text/javascript">
+    CommonWeb.Keen.Client = new Keen({
+    projectId: "551351932fd4b114c0263db0",
+    writeKey: "5b3dd744087ab91315bdd8d5e761a2eabed06a7b221f0ea4a1a615b411a9eb3eb31e37137c89f7544d2218901e14e06c689d66fb56abed5e871dcde4866ed29f73aab9b23a29c8cec6faf82a28503db4d05d6115c0a89e48250ea9b985431a19d3970b5d14c38074b4e2ae49a53b329f"
+    });
+    CommonWeb.addGlobalProperties(CommonWeb.Keen.globalProperties);
+    CommonWeb.Callback = CommonWeb.Keen.Callback;
+  </script>
+
+  <title>OSSAT 2015</title>
+  <meta name="description" content="Open Source Show &amp; Tell!">
 
 </head>
 
 <body>
-    <div class="customheader"></div>
+
+  <div class="customheader"></div>
+  <div class="wrapper">
     <div class="wrapper">
-    <div id="container">
-      <p class="tagline"></p>
-      <div id="main" role="main">
-        <div class="download-bar">
-        <div class="inner">
-          <a href="http://ossat16.eventbrite.com" class="code">Grab a ticket to the next event.</a>
+      <div id="container">
+        <div class="tagline">
+            <!-- <ul>
+            <li><a href="https://keen.io" target="_blank" name="keen_logo"><img src="https://s3-us-west-2.amazonaws.com/elof/opensourceshowtell/Keen-IO-Logo-no-text-transparent.png" /></a></li>
+            <li><a href="https://microsoft.com" target="_blank" name="ms_logo"><img src="https://s3-us-west-2.amazonaws.com/elof/opensourceshowtell/ms-logo.png" /></a></li>
+            </ul> -->
         </div>
-        <span class="blc"></span><span class="trc"></span>
+        <div id="main" role="main">
+          <div class="download-bar">
+              <div class="inner">
+                <a class="btn" href="http://ossat16.eventbrite.com" name="register">Register!</a>
+              </div>
+          </div>
+          <article class="markdown-body">
+  <h3>What is Open Source Show &amp; Tell!</h3>
+
+  <p>We love Open Source software and so do you. Come celebrate hacker culture with Keen IO, Rainforest QA, and Segment (<< in their brand new shiny office!).</p>
+  <p>Open Source Show and Tell is an opportunity to share what you've been working on, learn about projects that your local community is supporting, and meet like minded people.</p>
+
+
+  <h3>Speakers</h3>
+  <div class="speaker">
+    We will be announcing speakers soon!
+      <!-- <ul>
+      <li><img src="https://s3-us-west-2.amazonaws.com/elof/opensourceshowtell/bethfromMS.jpg" /></li>
+      <li><b><a href="https://twitter.com/BethMassi" target="_blank">Beth Massi</a> // On Open Sourcing .NET</b></li>
+      <li>Beth is a Senior Program Manager on the Visual Studio team at Microsoft and a community champion for .NET developers, currently working on .NET Open Source and the .NET Foundation.</li>
+      </ul>
+
+      <ul>
+      <li><img src="https://s3-us-west-2.amazonaws.com/elof/opensourceshowtell/russRainforest.jpg" /></li>
+      <li><b><a href="https://twitter.com/rhs" target="_blank">Russ Smith</a> // On <a href="https://github.com/rainforestapp/fourchette" target="_blank">fourchette</a> + developer workflow</b></li>
+      <li></b>Russell is the co-founder and CTO of Rainforest QA. He has tons of ops experience, mad coding skillz and 0 knowledge of geography. He loves hacking on open source, running meetups and arguing about startups.</li>
+      </ul>
+
+      <ul>
+      <li><img src="https://s3-us-west-2.amazonaws.com/elof/opensourceshowtell/anthony.png" /></li>
+      <li><b><a href="https://github.com/anthonyshort" target="_blank">Anthony Short</a> // On the <a href="https://github.com/segmentio/deku" target="_blank">Deku project</a> and composable UI.</b></li>
+      <li>Australian designer & front-end engineer living in San Francisco. Loves all things pirate and death metal. You can read his musings <a href="http://anthonyshort.me/" target="_blank">here.</a></li>
+      </ul>
+
+      <ul>
+      <li><img src="https://s3.amazonaws.com/keen-event-images/Nahid_opensourceshowandtell.png" /></li>
+      <li><b><a href="https://github.com/nsamsami" target="_blank">Nahid Samsami</a> // APIs and open source</b></li>
+      <li>Works on product at Keen IO with a focus on open source data tools. Cat advocate. Also known as Hidi. </li>
+      </ul> -->
+
+  </div>
+
+  <h3>Schedule</h3>
+  <div>
+  <ul>
+    <li>1:30 pm - 2:00 pm: Show up, hang out, grab a seat!</li>
+    <li>2:00 pm - 3:00 pm: Talks by OSS developers</li>
+    <!-- <li>2:00 pm - 2:20 pm: APIs and open source - Nahid Samsami, Keen IO  </li>
+    <li>2:20 pm - 2:40 pm: On fourchette + developer workflow - Russell Smith, Rainforest QA</li>
+    <li>2:40 pm - 3:00 pm: The Deku project - Anthony Short, Segment </li>
+    <li>3:00 pm - 3:20 pm: Snack + drink break! omnom </li>
+    <li>3:20 pm- 3:40 pm: [Special Guest] On open sourcing .NET - Beth Massi, Microsoft</li></li> -->
+    <li>3:40 pm - 5:00 pm: Community talks *we'll have some short breaks too!*
+    <li>5:00 pm - 6:00 pm: Happy Hour!!!</li>
+    <ul>
+    <h3>Some community talks >> </h3>
+      <!-- <li>Hypermedia API client in Swift, <a href="https://github.com/kylef" target="_blank">Kyle Fuller</a></li>
+      <li>AmpersandJS - the modular, non-frameworky framework, <a href="https://github.com/flipside" target="_blank">Mat Tyndall</a></li>
+      <li>Halogen – a HAL+JSON generator for Ruby, <a href="https://github.com/rivers" target="_blank">Heather Rivers</a></li>
+      <li>The beauty of OT and a realtime database, <a href="https://github.com/thejsj" target="_blank">Jorge Silva</a></li>
+      <li>Apache Mesos and its ecosystem, <a href="https://github.com/davelester" target="_blank">Dave Lester</a></li>
+      <li>Open source machine learning, <a href="https://github.com/hitgirl" target="_blank">Isabelle Lee</a></li>
+      <li>On Pachyderm + Data Pipelines, <a href="https://github.com/jdoliner" target="_blank">Joe Deliner</a></li>
+      <li>PostgREST - create a declarative API from any Postgres database, <a href="https://github.com/begriffs" target="_blank">Joe Nelson</a></li>
+      <li>Open source and startup business models, <a href="https://github.com/pritianka" target="_blank">Priyanka Sharma</a></li>
+      <li>Extensibility of a database API with JS, <a href="https://github.com/mchacki" target="_blank">Michael Hackstein</a></li> -->
+    </ul>
+  </ul>
+  </div>
+  <div class="submit">
+      <h1><a href="https://github.com/OpenSourceShowAndTell/SanFrancisco2016" target="_blank">Click on this sentence submit your own talk!</a>
+  </div>
+
+  <div class="conduct">
+
+  <p><b>We take the conduct of the organizers and all attendees very seriously. To read our code of conduct or make suggestions please visit <a href="https://github.com/OpenSourceShowAndTell/SanFrancisco_April2015/">Github</a></b></p>
+
+  </div>
+
+  <h3>Support or Contact</h3>
+
+  <p>Hit us up with comments or questions! <a href="mailto:justin+opensource@keen.io">This is an email.</a></p>
+          </article>
         </div>
-        <article class="markdown-body">
-          <h3>
-<a name="welcome-to-open-source-show--tell" class="anchor" href="#welcome-to-open-source-show--tell"><span class="octicon octicon-link"></span></a>Welcome to Open Source Show &amp; Tell!</h3>
-
-<p>TL;DR: <b>Open Source Show and Tell</b> is an event for anyone and everyone who is interested in open source projects. We want this to be an inclusive event that's all about sharing, learning, and getting involved in open source projects.
-
-<p>We hope that this creates an environment where you can meet some like-minded people, but also want to keep it fun and stress-free. To that end, we ask that recruiting not be part of the event.</p>
-
-<p>Below, you'll find resources for running your own <b>Open Source Show &amp; Tell!</b></p>
-
-<p>In keeping with the spirit of the event, this site is open source and we welcome pull requests! :D</p>
-
-<pre><code>$ git clone https://github.com/OpenSourceShowAndTell/opensourceshowandtell.github.io.git
-</code></pre>
-
-<h3><a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Sample Agenda</h3>
-
-<b>Welcome and Announcements</b>: 5-10 minutes to say hi and set the tone.
-<p>(Please review the Code of Conduct below.)</p>
-<p><b>Show & Tell</b>: We usually setup a number of 15 min talks that have 5 minuetes of Q&A after and leave some time for lightening talks near the end. The 20 min time blocks will require the presenter to put in some planning, but the lightening talks can be 2 to 5 min and don't necessarily require any planning.</p>
-<p><b>Workshop (optional)</b>: Dig into some code! We recommend 30 minutes.</p>
-<p><b>Keynote (optional)</b>: Have an extra interesting topic or speaker that might want to close out the event?</p>
-<p><b>Refreshments</b>: Hang out and get to know some people, it's a PARTY!</p>
-
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Playbook</h3>
-
-<p><b>Step One: Pick a date and find a location.</b></p>
-
-<p>Try and partner with a company or two that are very active open source contributors. You'll have some great content as a base and will be able to get some help with promotion.</p>
-
-<p><b>Step Two: Find people to present what they are working on.</b></p>
-
-<p>The project they present can be a personal project or something large-scale.</p>
-
-<p>For new open source contributors, smaller-scale projects can be less intimidating, since they won't need to ramp up on the codebase as much. Focusing on smaller-scale projects can be especially helpful if your event is language-agnostic.</p>
-
-<p><b>Step Three: Find someone to give a workshop or present a keynote.</b><br><i>This could be an opportunity for attendees to get their hands dirty!</i></p>
-
-<p>The workshop could be setting up local dev environments to get the ball rolling, contributing to something together, doing pairing sessions, or brainstorming new projects. The sky is the limit here, but it's really important that people come out of this feeling like they learned something!</p>
-
-<p>If you followed the first tip this should be easy. :) It's almost guaranteed that a company that's involved in open source projects has a workshop pre-fabbed and ready to roll. Setting up a good workshop can take a fair amount of work, so if you don't have someone that already has something ready to go, pair programming can be a great option.</p>
-
-<p><b>Step Four: Buy some beer.</b></p>
-
-<p>Programmers will drink cheep beer... but they prefer something tasty. Make sure you have non-alcoholic selections too, since not all programmers drink (or are old enough to)!</p>
-
-<p><b>Step Five: Promote like crazy.</b></p>
-
-<p>Most programmers hang out on Twitter. Tweet about your awesome event! Meetups can be a good resource too; there are a lot of programming meetups out there. Eventbrite is useful as well, since it links to social media and gives you a rough headcount.</p>
-
-<p>Don't forget about IRC! Talk up your event on open source channels, language-specific channels, city-specific channels, et cetera.</p>
-
-<p>Make sure to ask other open source advocates and companies to promote as well! It can be a really big help to tap other networks.</p>
-
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Code of Conduct</h3>
-
-<p><b>We recommend you institute a Code of Conduct for your event. Feel free to use the one below, or visit the <a href="http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy">Geek Feminism Wiki</a> to see a sample Code of Conduct and create your own!</b></p>
-
-<p><b>Open Source Show &amp; Tell</b> is dedicated to providing a harassment-free experience for everyone, regardless of gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, or religion. We do not tolerate harassment in any form. Participants violating these rules may be sanctioned or expelled from the event at the discretion of the event organizers.</p>
-
-<p>Harassment includes offensive verbal comments related to gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, religion, sexual images in public spaces, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual attention. Participants asked to stop any harassing behavior are expected to comply immediately.
-
-<p>If a participant engages in harassing behavior, the event organizers may take any action they deem appropriate, including warning the offender or expulsion from the event. If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact an event organizer immediately. We will be happy to help participants contact security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the event.</p>
-
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Hit us up with comments or questions! <a href="mailto:justin+opensource@keen.io">This is an email.</a></p>
-        </article>
       </div>
+      <footer>
+        <div class="owner">
+        <a class="btn" href="http://ossat16.eventbrite.com" name="register">Register!</a>
+        <!-- <a href="http://ossat16.eventbrite.com" class="code">Get a ticket!</a> -->
+        </div>
+      </footer>
     </div>
-    <footer>
-      <div class="owner">
+    <div class="current-section">
+      <a href="#top">Scroll to top</a>
+      <p class="name"></p>
+    </div>
 
-      <p><a href="https://github.com/OpenSourceShowAndTell" class="avatar"><img src="https://identicons.github.com/5fc0791e5f23756fc4c6e6276eb60838.png" width="48" height="48"/></a>View <a href="https://github.com/OpenSourceShowAndTell">OpenSourceShowAndTell</a> on <a href="https://www.github.com">GitHub</a></p>
+    <script language="javascript">
 
-      </div>
-    </footer>
-  </div>
-  <div class="current-section">
-    <a href="#top">Scroll to top</a>
-    <p class="name"></p>
-  </div>
+    CommonWeb.trackPageview();
+    CommonWeb.trackClicks();
+    CommonWeb.trackSession();
 
+    </script>
 
 </body>
 </html>
