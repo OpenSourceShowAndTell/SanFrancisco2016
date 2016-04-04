@@ -136,6 +136,7 @@ a.btn {
 
 .speaker ul li img {
   height: 200px;
+  width: auto;
 }
 
 .speaker ul li {
@@ -145,10 +146,10 @@ a.btn {
   display: block;
 }
 
-.speaker ul {
+/*.speaker ul {
   float: left;
   max-width: 220px;
-}
+}*/
 
 .speaker {
   text-align: center;
