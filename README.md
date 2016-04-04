@@ -2,6 +2,7 @@
 ##Friday April 22th, 2016 in San Francisco, CA from 2pm - 6pm
 
 ###[Submit a topic for a speaking spot as a GitHub issue](https://github.com/OpenSourceShowAndTell/SanFrancisco2016/issues/new)
+Each speaking spot will be 10 min for a presentation with a little time for Q&A. Please email community@keen.io with questions. 
 
 ##Past Events!
 
